@@ -1,0 +1,34 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package polinomios.vectores.forma1n;
+
+/**
+ *
+ * @author Bebes
+ */
+public class Ejemplo1Forma1N {
+    
+    /**
+     * @param args the command line arguments
+     * @throws java.lang.Exception
+     */
+    public static void main(String[] args) throws Exception {
+        // 8x6  + 4x3 – 5
+        int arregloRepresentaPolinomioA[] = {6, 8, 0, 0, 4, 0, 0, -5};
+        // 25x2 + 10x + 20
+        int arregloRepresentaPolinomioB[] = {2, 25, 10, 20};
+
+        PolinomioVectorForma1N polinomioA = new PolinomioVectorForma1N(arregloRepresentaPolinomioA);
+        PolinomioVectorForma1N polinomioB = new PolinomioVectorForma1N(arregloRepresentaPolinomioB);
+
+        System.out.println(polinomioA);
+        System.out.println(polinomioB);
+
+        PolinomioVectorForma1N polinomioCNuevo = polinomioA.sumar(polinomioB);
+        System.out.println(polinomioCNuevo);
+    }
+
+}
