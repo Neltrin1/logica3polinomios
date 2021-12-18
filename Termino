@@ -1,0 +1,38 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package util;
+
+/**
+ *
+ * @author Bebes
+ */
+public class TerminoN {
+    private double coeficiente;
+    private int exponente;
+
+    public TerminoN(double coeficiente, int exponente) {
+        this.coeficiente = coeficiente;
+        this.exponente = exponente;
+    }
+
+    public double getCoeficiente() {
+        return coeficiente;
+    }
+
+    public void setCoeficiente(double coeficiente) {
+        this.coeficiente = coeficiente;
+    }
+
+    public int getExponente() {
+        return exponente;
+    }
+
+    public void setExponente(int exponente) {
+        this.exponente = exponente;
+    }
+    
+    
+}
